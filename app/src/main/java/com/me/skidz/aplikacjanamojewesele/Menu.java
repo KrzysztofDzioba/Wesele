@@ -11,7 +11,6 @@ import android.os.Environment;
 import android.os.StrictMode;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -79,11 +78,14 @@ public class Menu extends AppCompatActivity {
         butQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Rozwiązujemy quiz! :)",
-                        Toast.LENGTH_LONG).show();
-
+                openQuiz();
             }
         });
+    }
+
+    private void openQuiz() {
+        Intent intent = new Intent(this, Quiz.class);
+        startActivity(intent);
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
