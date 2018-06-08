@@ -3,11 +3,11 @@ package com.me.skidz.aplikacjanamojewesele;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Quiz extends AppCompatActivity {
+public class QuizQuestion1 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz);
+        setContentView(R.layout.activity_quiz_question1);
     }
 }

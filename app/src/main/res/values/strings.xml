@@ -4,4 +4,9 @@
     <string name="zdjecie">Zrób zdjęcie weselne</string>
     <string name="plan">Przejrzyj plan wesela</string>
     <string name="fileProvider">com.me.skidz.aplikacjanamojewesele.fileprovider</string>
+    <string name="odpowiedz1Pyt1">Przykładowa odpowiedź nr 1 to jest bardzo dluga odpowiedz i sprawdzam co sie z nia stanie</string>
+    <string name="odpowiedz2Pyt1">Przykładowa odpowiedź nr 2 to jest bardzo dluga odpowiedz i sprawdzam co sie z nia stanie</string>
+    <string name="odpowiedz3Pyt1">Przykładowa odpowiedź nr 3 to jest bardzo dluga odpowiedz i sprawdzam co sie z nia stanie</string>
+    <string name="odpowiedz4Pyt1">Przykładowa odpowiedź nr 4 to jest bardzo dluga odpowiedz i sprawdzam co sie z nia stanie</string>
+    <string name="pytanie1">Gdzie poznała się młoda para?</string>
 </resources>

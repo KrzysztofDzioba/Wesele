@@ -84,7 +84,7 @@ public class Menu extends AppCompatActivity {
     }
 
     private void openQuiz() {
-        Intent intent = new Intent(this, Quiz.class);
+        Intent intent = new Intent(this, QuizQuestion1.class);
         startActivity(intent);
     }
 

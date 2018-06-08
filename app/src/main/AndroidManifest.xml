@@ -30,7 +30,7 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".Quiz"></activity>
+        <activity android:name=".QuizQuestion1"></activity>
     </application>
 
 </manifest>

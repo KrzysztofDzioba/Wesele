@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f2fd"
+    tools:context="com.me.skidz.aplikacjanamojewesele.QuizQuestion1">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/answer1"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/answerBackgroundColor"
+                android:text="@string/odpowiedz1Pyt1"
+                android:textColor="@color/answerTextColor"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+            <Button
+                android:id="@+id/answer3"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/answerBackgroundColor"
+                android:text="@string/odpowiedz3Pyt1"
+                android:textColor="@color/answerTextColor"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/answerBackgroundColor"
+                android:textColor="@color/answerTextColor"
+                android:text="@string/odpowiedz2Pyt1"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Button
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="3dp"
+                android:background="@color/answerBackgroundColor"
+                android:textColor="@color/answerTextColor"
+                android:text="@string/odpowiedz4Pyt1"
+                tools:layout_editor_absoluteX="86dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pytanie1"
+        android:layout_width="340dp"
+        android:layout_height="210dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_blue_bright"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/pytanie1"
+        android:textAppearance="@android:style/TextAppearance.Holo.Light.Large"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
+
+
+</android.support.constraint.ConstraintLayout>
