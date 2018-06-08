@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e3f2fd"
+    android:backgroundTint="#f4e699"
     tools:context="com.me.skidz.aplikacjanamojewesele.QuizQuestion1">
 
 
@@ -77,8 +78,8 @@
                 android:layout_marginStart="3dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/answerBackgroundColor"
-                android:textColor="@color/answerTextColor"
                 android:text="@string/odpowiedz2Pyt1"
+                android:textColor="@color/answerTextColor"
                 tools:layout_editor_absoluteX="86dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -91,8 +92,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginStart="3dp"
                 android:background="@color/answerBackgroundColor"
-                android:textColor="@color/answerTextColor"
                 android:text="@string/odpowiedz4Pyt1"
+                android:textColor="@color/answerTextColor"
                 tools:layout_editor_absoluteX="86dp"
                 tools:layout_editor_absoluteY="16dp" />
 
