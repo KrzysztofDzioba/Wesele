@@ -28,7 +28,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/answer1"
+                android:id="@+id/q1a1"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
                 android:layout_marginBottom="5dp"
@@ -45,7 +45,7 @@
 
 
             <Button
-                android:id="@+id/answer3"
+                android:id="@+id/q1a3"
                 android:layout_width="fill_parent"
                 android:layout_height="100dp"
                 android:layout_marginEnd="3dp"
@@ -67,7 +67,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/answer2"
+                android:id="@+id/q1a2"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginBottom="5dp"
@@ -83,7 +83,7 @@
                 tools:layout_editor_absoluteY="16dp" />
 
             <Button
-                android:id="@+id/answer4"
+                android:id="@+id/q1a4"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginEnd="10dp"
@@ -110,15 +110,15 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_blue_bright"
-        android:fontFamily="serif"
+        android:fontFamily="@font/aref_ruqaa"
         android:gravity="center"
         android:text="@string/pytanie1"
-        android:textAppearance="@android:style/TextAppearance.Holo.Light.Large"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintVertical_bias="0.447" />
 
 
 </android.support.constraint.ConstraintLayout>
