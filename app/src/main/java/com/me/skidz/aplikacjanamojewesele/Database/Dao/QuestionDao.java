@@ -3,20 +3,16 @@ package com.me.skidz.aplikacjanamojewesele.Database.Dao;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
-import android.arch.persistence.room.Query;
 
-import com.me.skidz.aplikacjanamojewesele.Database.Entities.Answer;
+import com.me.skidz.aplikacjanamojewesele.Database.Entities.Question;
 
 /**
  * Created by skidz on 09.06.2018.
  */
 
 @Dao
-public interface AnswerDao {
+public interface QuestionDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void addAnswer(Answer answer);
-
-    @Query(value = "SELECT * FROM answer")
-    Answer[] getAnswers();
+    void addNewQuestion(Question question);
 }

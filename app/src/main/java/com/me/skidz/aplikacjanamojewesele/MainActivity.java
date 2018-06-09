@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int SLEEP_TIME = 250;
+    private static int SLEEP_TIME = 2500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

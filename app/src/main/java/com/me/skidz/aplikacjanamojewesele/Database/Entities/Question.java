@@ -10,10 +10,10 @@ import android.arch.persistence.room.PrimaryKey;
 @Entity
 public class Question {
 
-    @PrimaryKey(autoGenerate = true)
-    int id;
+    @PrimaryKey
+    public int id;
 
-    String question;
+    public String question;
 
     public Question(int id, String question) {
         this.id = id;

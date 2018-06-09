@@ -11,10 +11,10 @@ import android.arch.persistence.room.PrimaryKey;
 public class User {
 
     @PrimaryKey(autoGenerate = true)
-    int id;
+    public int id;
 
-    String firstName;
-    String lastName;
+    public String firstName;
+    public String lastName;
 
     public User(int id, String firstName, String lastName) {
         this.id = id;

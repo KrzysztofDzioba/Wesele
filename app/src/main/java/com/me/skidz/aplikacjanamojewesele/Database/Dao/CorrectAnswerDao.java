@@ -5,18 +5,18 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.OnConflictStrategy;
 import android.arch.persistence.room.Query;
 
-import com.me.skidz.aplikacjanamojewesele.Database.Entities.Answer;
+import com.me.skidz.aplikacjanamojewesele.Database.Entities.CorrectAnswer;
 
 /**
  * Created by skidz on 09.06.2018.
  */
 
 @Dao
-public interface AnswerDao {
+public interface CorrectAnswerDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void addAnswer(Answer answer);
+    void addCorrectAnswer(CorrectAnswer correctAnswer);
 
-    @Query(value = "SELECT * FROM answer")
-    Answer[] getAnswers();
+    @Query(value = "SELECT answerId FROM CorrectAnswer WHERE :questionId == questionId")
+    int getCorrectAnswer(int questionId);
 }

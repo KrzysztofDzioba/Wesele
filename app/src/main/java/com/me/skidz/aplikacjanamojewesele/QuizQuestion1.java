@@ -13,6 +13,9 @@ public class QuizQuestion1 extends AppCompatActivity {
     private Button q1a3;
     private Button q1a4;
 
+    public int givenAnswer;
+    public static String answerNumber = "answerNumber";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,7 @@ public class QuizQuestion1 extends AppCompatActivity {
         q1a1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                givenAnswer = 1;
                 startNextActivity();
             }
         });
@@ -41,6 +45,7 @@ public class QuizQuestion1 extends AppCompatActivity {
         q1a2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                givenAnswer = 2;
                 startNextActivity();
             }
         });
@@ -48,6 +53,7 @@ public class QuizQuestion1 extends AppCompatActivity {
         q1a3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                givenAnswer = 3;
                 startNextActivity();
             }
         });
@@ -55,6 +61,7 @@ public class QuizQuestion1 extends AppCompatActivity {
         q1a4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                givenAnswer = 4;
                 startNextActivity();
             }
         });
@@ -63,6 +70,7 @@ public class QuizQuestion1 extends AppCompatActivity {
     private void startNextActivity() {
         Class nextActivityClass = QuizEnd.class;
         Intent nextActivity = new Intent(this, nextActivityClass);
+        nextActivity.putExtra(answerNumber, givenAnswer);
         startActivity(nextActivity);
     }
 

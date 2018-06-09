@@ -10,13 +10,18 @@ import android.arch.persistence.room.PrimaryKey;
 @Entity
 public class Answer {
 
-    @PrimaryKey(autoGenerate = true)
-    int id;
+    @PrimaryKey
+    public int id;
 
     public String answer;
 
     public Answer(int id, String answer) {
         this.id = id;
         this.answer = answer;
+    }
+
+    @Override
+    public String toString() {
+        return " Answer: " + answer;
     }
 }
