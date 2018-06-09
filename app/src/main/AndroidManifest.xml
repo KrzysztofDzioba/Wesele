@@ -30,10 +30,13 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".QuizQuestion1"></activity>
+        <activity android:name=".QuizQuestion1" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".QuizEnd"></activity>
     </application>
 
 </manifest>
