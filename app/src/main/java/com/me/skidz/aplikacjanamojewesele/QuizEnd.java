@@ -14,9 +14,6 @@ import com.me.skidz.aplikacjanamojewesele.Database.WeddingAppDatabase;
 public class QuizEnd extends AppCompatActivity {
 
     final String DATABASE_NAME = "wedding.db";
-    WeddingAppDatabase db;
-
-
     private TextView quizEndText;
 
     @Override
@@ -53,7 +50,7 @@ public class QuizEnd extends AppCompatActivity {
         Intent thisActivity = getIntent();
         Bundle extras = thisActivity.getExtras();
         int answerNumber = extras.getInt(QuizQuestion1.answerNumber);
-        
+
         boolean answerIsCorrect = db.correctAnswerDao().getCorrectAnswer(1) == answerNumber;
         String message = answerIsCorrect ? "Brawo! :D" : "Niestety nie :(";
 
