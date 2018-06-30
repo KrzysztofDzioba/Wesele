@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.me.skidz.aplikacjanamojewesele.Weather">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="123dp"
+        app:srcCompat="@drawable/icons8_partly_cloudy_day_96"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="145dp"
+        android:layout_height="78dp"
+        android:text="30st."
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="305dp"
+        android:layout_height="346dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprawdź pogodę"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="343dp" />
+</android.support.constraint.ConstraintLayout>

@@ -36,7 +36,8 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".QuizEnd"></activity>
+        <activity android:name=".QuizEnd" />
+        <activity android:name=".Weather"></activity>
     </application>
 
 </manifest>
